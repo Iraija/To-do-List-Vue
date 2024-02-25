@@ -21,7 +21,7 @@
                             <p>To-do List</p>
                             <i class="fa-solid fa-list-check"></i>
                         </div>
-                        <p class="text-xs"><span class="font-bold text-green-500">MAKE</span> your task, <span class="font-bold text-green-500">DO</span> your task, <span class="font-bold text-green-500">COMPLETE</span> your task</p>
+                        <p class="text-[0.60rem] sm:text-xs text-center "><span class="font-bold text-green-500">MAKE</span> your task, <span class="font-bold text-green-500">DO</span> your task, <span class="font-bold text-green-500">COMPLETE</span> your task</p>
                     </div>
                     <div class="flex flex-col gap-2 px-5 font-normal text-sm text-green-500">
                         <p class="font-bold">How to use:</p>
