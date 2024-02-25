@@ -23,7 +23,7 @@
                         </div>
                         <p class="text-[0.60rem] sm:text-xs text-center "><span class="font-bold text-green-500">MAKE</span> your task, <span class="font-bold text-green-500">DO</span> your task, <span class="font-bold text-green-500">COMPLETE</span> your task</p>
                     </div>
-                    <div class="flex flex-col gap-2 px-5 font-normal text-sm text-green-500">
+                    <div class="flex flex-col gap-2 px-5 font-normal text-[0.60rem] text-green-500">
                         <p class="font-bold">How to use:</p>
                         <p>1. Click <span class="font-semibold">Add to-do <i class="fa-regular fa-square-plus"></i></span> to add/create a to-do item, then input your task and click save.</p>
                         <p>2. Click the checkbox <span class="font-semibold"><i class="fa-solid fa-square-check"></i></span> when you're to-do item is done.</p>
