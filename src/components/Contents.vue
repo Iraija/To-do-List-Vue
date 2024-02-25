@@ -1,12 +1,12 @@
 <template>
-    <body class="flex-1 flex flex-col container font-Poppins text-sm">
+    <body class="flex-1 flex flex-col container font-Poppins text-xs">
         <div class="flex flex-col sm:flex-row gap-2 mt-2 mb-5 text-green-500">
             <div class="flex gap-1 items-center flex-1 bg-white shadow-md rounded-md font-semibold">
                 <div class="flex items-center gap-1 pl-5 pr-2 py-2">
                     <p>Filter</p>
                     <i class="fa-solid fa-sliders"></i>
                 </div>
-                <select name="filter" id="filter" v-model="filter" class="w-full mr-5 px-2 py-1 border-l-2 border-green-500 cursor-pointer">
+                <select name="filter" id="filter" v-model="filter" class="flex-1 mr-5 px-2 py-1 border-l-2 border-green-500 cursor-pointer">
                     <option value="1">Display: All to-do list</option>
                     <option value="2">Display: Undone to-do list</option>
                     <option value="3">Display: Done to-do list</option>
@@ -23,7 +23,7 @@
 
         <div class="flex-1 flex flex-col mb-5">
             <ul class="flex flex-col gap-2">
-                <li v-for="todoItem in filteredTodoItems" :key="todoItem.id" class="w-full px-5 py-2 flex flex-row gap-2 items-center bg-white shadow-sm text-sm rounded-full">
+                <li v-for="todoItem in filteredTodoItems" :key="todoItem.id" class="w-full px-5 py-2 flex flex-row gap-2 items-center bg-white shadow-xm text-xm rounded-full">
                     <input type="checkbox" v-model="todoItem.done">
                     <div class="flex-1 text-black">
                         <span :class="{ done: todoItem.done }">{{ todoItem.todoItemText }}</span>
@@ -93,7 +93,7 @@
 </script>
 
 <style>
-    .done{
+    .done {
         color: #d3d3d3;
     }
 </style>
