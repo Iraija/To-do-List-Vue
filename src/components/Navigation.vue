@@ -8,7 +8,7 @@
             </div>
 
             <div class="flex flex-1 justify-end">
-                <div @click="toggleModal" class="flex items-center gap-1 text-sm bg-green-400 p-1 rounded-full border-2 border-white shadow-sm hover:bg-white hover:text-green-500 hover:border-green-500 hover:shadow-md hover:scale-[100.5%] duration-150 cursor-pointer">
+                <div @click="toggleModal" class="flex items-center gap-1 text-lg shadow-sm hover:text-green-700 hover:scale-[100.5%] duration-150 cursor-pointer">
                     <i class="fa-solid fa-circle-info"></i>
                 </div>
             </div>
