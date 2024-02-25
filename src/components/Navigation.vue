@@ -13,7 +13,7 @@
                 </div>
             </div>
 
-            <BaseModal :modalActive="modalActive" @close-modal="toggleModal">
+            <BaseModal :modalState="modalState" @close-modal="toggleModal">
                 <div class="flex flex-col gap-5 text-md font-semibold w-full text-green-400">
                     <div class="flex flex-col items-center">
                         <p>Welcome to</p>
@@ -25,11 +25,12 @@
                     </div>
                     <div class="flex flex-col gap-2 px-5 font-normal text-sm text-green-500">
                         <p class="font-bold">How to use:</p>
-                        <p>1. Click <span class="font-semibold">Add to-do <i class="fa-solid fa-pen-to-square"></i></span> to add/create a to-do item, then input your task and click save.</p>
+                        <p>1. Click <span class="font-semibold">Add to-do <i class="fa-regular fa-square-plus"></i></span> to add/create a to-do item, then input your task and click save.</p>
                         <p>2. Click the checkbox <span class="font-semibold"><i class="fa-solid fa-square-check"></i></span> when you're to-do item is done.</p>
-                        <p>3. Click the delete icon <span class="font-semibold"><i class="fa-solid fa-trash"></i></span> when you want to delete a to-do item.</p>
-                        <p>4. Filter your list by clicking <span class="font-semibold">Filter <i class="fa-solid fa-sliders"></i></span> and select your filter option.</p>
-                        <p>5. Now <span class="font-bold text-green-500">MAKE</span>, <span class="font-bold text-green-500">DO</span>, and <span class="font-bold text-green-500">COMPLETE</span> your task.</p>
+                        <p>3. Click the edit icon <span class="font-semibold"><i class="fa-solid fa-pen-to-square"></i></span> to edit your to-do item, input your new task and click save.</p>
+                        <p>4. Click the delete icon <span class="font-semibold"><i class="fa-solid fa-trash"></i></span> when you want to delete a to-do item.</p>
+                        <p>5. Filter your list by clicking <span class="font-semibold">Filter <i class="fa-solid fa-sliders"></i></span> and select your filter option.</p>
+                        <p>6. Now <span class="font-bold text-green-500">MAKE</span>, <span class="font-bold text-green-500">DO</span>, and <span class="font-bold text-green-500">COMPLETE</span> your task.</p>
                     </div>
                     
                     <div>            
@@ -40,7 +41,7 @@
                     </div>
                 </div>
             </BaseModal>
-
+            
         </nav>
     </header>
 </template>
@@ -49,9 +50,9 @@
     import { ref } from 'vue';
     import BaseModal from './modal/BaseModal.vue';
 
-    const modalActive = ref(null);
+    const modalState = ref(null);
     const toggleModal = () => {
-        modalActive.value =!modalActive.value;
+        modalState.value =!modalState.value;
     }
 
 </script>
