@@ -6,7 +6,7 @@
                     <p>Filter</p>
                     <i class="fa-solid fa-sliders"></i>
                 </div>
-                <select name="filter" id="filter" v-model="filter" class="flex-1 mr-5 px-2 py-1 border-l-2 bg-none border-green-500 cursor-pointer">
+                <select name="filter" id="filter" v-model="filter" class="flex-1 mr-5 px-2 py-1 border-l-2 bg-white border-green-500 cursor-pointer">
                     <option value="1">Display: All to-do list</option>
                     <option value="2">Display: Undone to-do list</option>
                     <option value="3">Display: Done to-do list</option>
