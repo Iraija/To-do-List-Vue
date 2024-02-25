@@ -1,6 +1,6 @@
 <template>
-    <body class="flex-1 flex flex-col container font-Poppins text-green-500 text-sm">
-        <div class="flex flex-col sm:flex-row gap-2 mt-2 mb-5">
+    <body class="flex-1 flex flex-col container font-Poppins text-sm">
+        <div class="flex flex-col sm:flex-row gap-2 mt-2 mb-5 text-green-500">
             <div class="flex gap-1 items-center flex-1 bg-white shadow-md rounded-md font-semibold">
                 <div class="flex items-center gap-1 pl-5 pr-2 py-2">
                     <p>Filter</p>
@@ -91,3 +91,9 @@
     }
 
 </script>
+
+<style>
+    .done{
+        color: #d3d3d3;
+    }
+</style>

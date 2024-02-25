@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen bg-green-200">
+  <div class="flex flex-col min-h-screen bg-green-200 relative">
     <Navigation />
     <Contents />
   </div>
